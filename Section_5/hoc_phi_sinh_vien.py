@@ -6,7 +6,7 @@
 so_tin = int(input("Nhập số tín chỉ: "))
 flag_cq = int(input("Bạn có là sinh viên chính quy không? (1: Có | 0: Không): "))
 hoc_phi = 0
-if flag_cq == True:
+if flag_cq == 1:
     if so_tin > 15:
         hoc_phi = 100*15 + (so_tin - 15)*90
     else:
