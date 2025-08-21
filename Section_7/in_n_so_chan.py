@@ -10,3 +10,5 @@ if n.isdigit():
         while(i <= x):
             print(i, end = " ")
             i+=2
+else:
+    print("?!")
