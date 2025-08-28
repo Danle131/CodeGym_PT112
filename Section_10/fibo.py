@@ -6,23 +6,20 @@
 # Chương trình yêu cầu nhập một số nguyên n và in ra n số Fibonacci đầu tiên.
 
 def fibo(n):
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
+    list = [0,1]
     a = 0
     b = 1
     t = 0
-    for i in range(n + 1):
-        if i < 2:
-            continue
+    for i in range(2, n + 1):
         t = a + b
         a = b
         b = t
-    return b
+        list.append(b)
+    return list
 n_str = input("Nhập số n: ")
 if n_str.isdigit():
     n = int(n_str)
-    if n > 0:
+    if n >= 0:
+        fibo_n = fibo(n)
         for i in range(n + 1):
-            print(f'Số fibonacci thứ {i} = {fibo(i)}')
+            print(f'Số fibonacci thứ {i} = {fibo_n[i]}')
