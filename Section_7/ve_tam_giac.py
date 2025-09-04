@@ -14,8 +14,8 @@ while height.isdigit():
 
     # Vẽ tam giác ver2
     for i in range(x, -1, -1):
-        for j in range (i):
-            print("#", end = "")
+        for j in range (i, 0, -1):
+            print(j, end = " ")
         print()      
 
     print()
